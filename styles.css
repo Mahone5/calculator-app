@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  font-family: sans-serif;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.2),
+      rgba(3, 3, 3, 0.5)
+    ),
+    url(abacus.jpg);
+  color: #fff;
+}
+
+.container {
+  max-width: 80rem;
+  padding: 3.6rem 4.8rem;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: 1.2px;
+  margin-bottom: 2rem;
+}
+
+span {
+  font-size: 3rem;
+}
+
+.num-spans {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.num-spans span {
+  border-bottom: 2px solid white;
+  margin-bottom: 2rem;
+  font-size: 5rem;
+}
+
+.buttons {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+button {
+  display: inline-block;
+  width: 10rem;
+  margin: 0 1rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 1.7rem;
+  background-color: transparent;
+  color: white;
+  border: 0;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.04);
+  color: orangered;
+}
+
+button:active,
+button:link {
+  outline: none;
+}
+
+.clear-btn {
+  display: inline-block;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid white;
+  margin: 2rem auto;
+}
+
+.clear:hover {
+  transform: scale(0.98);
+}
